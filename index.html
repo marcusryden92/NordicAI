@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nordic AI Initiative - Sovereign AI for a Sustainable Future</title>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
       @media print {
         body {
           margin: 0;
@@ -66,6 +70,19 @@
         margin-bottom: 15px;
       }
 
+      .toc-item {
+        margin: 8px 0;
+        padding-left: 20px;
+      }
+
+      .toc-item .toc-item {
+        padding-left: 30px;
+      }
+
+      .toc-item .toc-item .toc-item {
+        padding-left: 40px;
+      }
+
       h1 {
         color: #1a237e;
         font-size: 18pt;
@@ -97,6 +114,14 @@
 
       strong {
         color: #3652a5;
+      }
+
+      a {
+        font-family: "Calibri", serif;
+        line-height: 1.65;
+        color: #2c3e50;
+
+        text-decoration: none; /* removes underline */
       }
 
       .executive-summary {
@@ -217,15 +242,16 @@
         padding-bottom: 10px;
       }
 
-      .toc-item {
-        margin: 8px 0;
-        padding-left: 20px;
-      }
-
       .toc-section {
         font-weight: bold;
         margin: 15px 0 5px 0;
         padding-left: 0;
+      }
+
+      .toc-item {
+        font-weight: normal; /* Ensure sub-items are not bold */
+        margin: 8px 0;
+        padding-left: 20px;
       }
 
       .citation {
@@ -260,32 +286,202 @@
 
     <div class="toc">
       <h2>Table of Contents</h2>
-      <div class="toc-section">1. Executive Summary</div>
-      <div class="toc-section">2. Strategic Context and Vision</div>
-      <div class="toc-item">2.1 Core Vision</div>
-      <div class="toc-item">2.2 Strategic Rationale</div>
-      <div class="toc-section">3. Foundational Framework</div>
-      <div class="toc-item">3.1 Core Pillars</div>
-      <div class="toc-item">3.2 Governance Structure</div>
       <div class="toc-section">
-        4. Energy Infrastructure and Strategic Positioning
+        <a href="#executive-summary">1. Executive Summary</a>
       </div>
-      <div class="toc-item">4.1 Green Compute Infrastructure</div>
-      <div class="toc-item">4.2 Repurposing Industrial Assets</div>
       <div class="toc-section">
-        5. Products, Services and Market Opportunity
+        <a href="#strategic-context">2. Strategic Context and Vision</a>
+        <div class="toc-item">
+          <a href="#core-vision">2.1 Core Vision</a>
+        </div>
+        <div class="toc-item">
+          <a href="#strategic-rationale">2.2 Strategic Rationale</a>
+          <div class="toc-item">
+            <a href="#geopolitical-imperatives"
+              >2.2.1 Geopolitical Imperatives</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#nordic-advantages">2.2.2 Nordic Competitive Advantages</a>
+          </div>
+        </div>
       </div>
-      <div class="toc-item">5.1 Core Offerings</div>
-      <div class="toc-item">5.2 Economic Projections</div>
-      <div class="toc-section">6. Talent Strategy and Global Positioning</div>
-      <div class="toc-section">7. Implementation Roadmap</div>
-      <div class="toc-section">8. Conclusion and Next Steps</div>
+      <div class="toc-section">
+        <a href="#foundational-framework">3. Foundational Framework</a>
+        <div class="toc-item">
+          <a href="#core-pillars">3.1 Core Pillars of the Proposal</a>
+          <div class="toc-item">
+            <a href="#governance-ownership"
+              >3.1.1 Governance and Ownership Structure</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#infrastructure-investment"
+              >3.1.2 Infrastructure Investment Strategy</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#academic-integration"
+              >3.1.3 Academic and Research Integration</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#talent-attraction">3.1.4 Global Talent Attraction</a>
+          </div>
+        </div>
+        <div class="toc-item">
+          <a href="#governance-trust">3.2 Governance and Trust Framework</a>
+          <div class="toc-item">
+            <a href="#transparency-accountability"
+              >3.2.1 Transparency and Accountability</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#ethical-ai">3.2.2 Ethical AI Development</a>
+          </div>
+        </div>
+      </div>
+      <div class="toc-section">
+        <a href="#energy-infrastructure"
+          >4. Energy Infrastructure and Strategic Positioning</a
+        >
+        <div class="toc-item">
+          <a href="#green-compute"
+            >4.1 Green Compute Infrastructure Development</a
+          >
+          <div class="toc-item">
+            <a href="#energy-centrality"
+              >4.1.1 Why Energy Infrastructure Is Central to AI Leadership</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#nordic-energy-advantages"
+              >4.1.2 Nordic Energy Advantages</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#infrastructure-development"
+              >4.1.3 Infrastructure Development Plan</a
+            >
+          </div>
+        </div>
+        <div class="toc-item">
+          <a href="#repurposing-assets"
+            >4.2 Strategic Repurposing of Industrial Assets</a
+          >
+          <div class="toc-item">
+            <a href="#northvolt-opportunity">4.2.1 The Northvolt Opportunity</a>
+          </div>
+          <div class="toc-item">
+            <a href="#conversion-strategy">4.2.2 Conversion Strategy</a>
+          </div>
+          <div class="toc-item">
+            <a href="#longterm-energy">4.2.3 Long-term Energy Strategy</a>
+          </div>
+        </div>
+      </div>
+      <div class="toc-section">
+        <a href="#products-services"
+          >5. Products, Services and Market Opportunity</a
+        >
+        <div class="toc-item">
+          <a href="#core-offerings">5.1 Core Product Portfolio</a>
+          <div class="toc-item">
+            <a href="#public-sector-ai">5.1.1 Public Sector AI Services</a>
+          </div>
+          <div class="toc-item">
+            <a href="#commercial-services"
+              >5.1.2 Commercial and Enterprise Services</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#international-services"
+              >5.1.3 International and Strategic Services</a
+            >
+          </div>
+        </div>
+        <div class="toc-item">
+          <a href="#economic-projections"
+            >5.2 Economic Projections and Market Analysis</a
+          >
+          <div class="toc-item">
+            <a href="#revenue-projections">5.2.1 Revenue Projections</a>
+          </div>
+          <div class="toc-item">
+            <a href="#market-opportunity">5.2.2 Market Opportunity Analysis</a>
+          </div>
+          <div class="toc-item">
+            <a href="#investment-requirements">5.2.3 Investment Requirements</a>
+          </div>
+        </div>
+      </div>
+      <div class="toc-section">
+        <a href="#talent-strategy">6. Talent Strategy and Global Positioning</a>
+        <div class="toc-item">
+          <a href="#talent-magnet">6.1 Global Talent Magnet Strategy</a>
+          <div class="toc-item">
+            <a href="#ai-visa">6.1.1 The Nordic AI Visa Program</a>
+          </div>
+          <div class="toc-item">
+            <a href="#competitive-positioning">6.1.2 Competitive Positioning</a>
+          </div>
+          <div class="toc-item">
+            <a href="#university-integration"
+              >6.1.3 University Integration Strategy</a
+            >
+          </div>
+        </div>
+        <div class="toc-item">
+          <a href="#global-positioning"
+            >6.2 Global Positioning and Competitive Strategy</a
+          >
+          <div class="toc-item">
+            <a href="#private-labs"
+              >6.2.1 Differentiation from Private AI Labs</a
+            >
+          </div>
+          <div class="toc-item">
+            <a href="#international-positioning"
+              >6.2.2 International Positioning Strategy</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="toc-section">
+        <a href="#implementation-roadmap">7. Implementation Roadmap</a>
+        <div class="toc-item">
+          <a href="#five-phase">7.1 Five-Phase Implementation Strategy</a>
+        </div>
+        <div class="toc-item">
+          <a href="#risk-management"
+            >7.2 Risk Management and Mitigation Strategies</a
+          >
+        </div>
+      </div>
+      <div class="toc-section">
+        <a href="#conclusion">8. Conclusion and Next Steps</a>
+        <div class="toc-item">
+          <a href="#strategic-imperative">8.1 Strategic Imperative</a>
+        </div>
+        <div class="toc-item">
+          <a href="#unique-advantages">8.2 Unique Nordic Advantages</a>
+        </div>
+        <div class="toc-item">
+          <a href="#transformative-potential">8.3 Transformative Potential</a>
+        </div>
+        <div class="toc-item">
+          <a href="#call-to-action">8.4 Call to Action</a>
+        </div>
+        <div class="toc-item">
+          <a href="#historical-parallel">8.5 Historical Parallel and Vision</a>
+        </div>
+      </div>
     </div>
 
     <div class="page-break"></div>
 
     <div class="executive-summary">
-      <h2>Executive Summary</h2>
+      <h2 id="executive-summary">Executive Summary</h2>
       <p>
         The Nordic AI Initiative represents a transformative opportunity to
         establish European leadership in ethical, sovereign artificial
@@ -318,9 +514,9 @@
       </p>
     </div>
 
-    <h1>1. Strategic Context and Vision</h1>
+    <h1 id="strategic-context">1. Strategic Context and Vision</h1>
 
-    <h2>1.1 Core Vision</h2>
+    <h2 id="core-vision">1.1 Core Vision</h2>
     <p>
       The Nordic AI Initiative aims to establish a
       <strong>publicly backed AI infrastructure platform</strong> that
@@ -352,9 +548,9 @@
       one of the most important technologies of the 21st century.
     </p>
 
-    <h2>1.2 Strategic Rationale</h2>
+    <h2 id="strategic-rationale">1.2 Strategic Rationale</h2>
 
-    <h3>Geopolitical Imperatives</h3>
+    <h3 id="geopolitical-imperatives">Geopolitical Imperatives</h3>
     <p>
       Currently, the AI ecosystem is largely controlled by a few powerful
       private companies, mostly headquartered in the United States, with China
@@ -375,7 +571,7 @@
       misaligned incentives and undesirable outcomes.
     </p>
 
-    <h3>Nordic Competitive Advantages</h3>
+    <h3 id="nordic-advantages">Nordic Competitive Advantages</h3>
     <p>
       The Nordic region offers a unique combination of strengths that make it
       especially well-suited to lead ethical AI development. One of the most
@@ -413,7 +609,7 @@
 
     <div class="page-break"></div>
 
-    <h1>2. Foundational Framework</h1>
+    <h1 id="foundational-framework">2. Foundational Framework</h1>
 
     <h2>2.1 Core Pillars of the Proposal</h2>
 
@@ -507,9 +703,11 @@
 
     <div class="page-break"></div>
 
-    <h1>3. Energy Infrastructure and Strategic Positioning</h1>
+    <h1 id="energy-infrastructure">
+      3. Energy Infrastructure and Strategic Positioning
+    </h1>
 
-    <h2>3.1 Green Compute Infrastructure Development</h2>
+    <h2 id="green-compute">3.1 Green Compute Infrastructure Development</h2>
 
     <h3>Why Energy Infrastructure Is Central to AI Leadership</h3>
     <p>
@@ -589,7 +787,9 @@
       energy usage.
     </p>
 
-    <h2>3.2 Strategic Repurposing of Industrial Assets</h2>
+    <h2 id="repurposing-assets">
+      3.2 Strategic Repurposing of Industrial Assets
+    </h2>
 
     <h3>The Northvolt Opportunity</h3>
     <p>
@@ -660,7 +860,7 @@
 
     <div class="page-break"></div>
 
-    <h1>4. Products, Services and Market Opportunity</h1>
+    <h1 id="products-services">4. Products, Services and Market Opportunity</h1>
 
     <h2>4.1 Core Product Portfolio</h2>
 
@@ -784,7 +984,9 @@
       </li>
     </ul>
 
-    <h2>4.2 Economic Projections and Market Analysis</h2>
+    <h2 id="economic-projections">
+      4.2 Economic Projections and Market Analysis
+    </h2>
 
     <h3>Revenue Projections</h3>
     <div class="economic-projection">
@@ -898,9 +1100,9 @@
 
     <div class="page-break"></div>
 
-    <h1>5. Talent Strategy and Global Positioning</h1>
+    <h1 id="talent-strategy">5. Talent Strategy and Global Positioning</h1>
 
-    <h2>5.1 Global Talent Magnet Strategy</h2>
+    <h2 id="talent-magnet">5.1 Global Talent Magnet Strategy</h2>
 
     <h3>The Nordic AI Visa Program</h3>
     <p>
@@ -1029,7 +1231,9 @@
       </ul>
     </div>
 
-    <h2>5.2 Global Positioning and Competitive Strategy</h2>
+    <h2 id="global-positioning">
+      5.2 Global Positioning and Competitive Strategy
+    </h2>
 
     <h3>Differentiation from Private AI Labs</h3>
     <p>
@@ -1101,9 +1305,9 @@
 
     <div class="page-break"></div>
 
-    <h1>6. Implementation Roadmap</h1>
+    <h1 id="implementation-roadmap">6. Implementation Roadmap</h1>
 
-    <h2>6.1 Five-Phase Implementation Strategy</h2>
+    <h2 id="five-phase">6.1 Five-Phase Implementation Strategy</h2>
 
     <div class="roadmap-phase">
       <div class="phase-title">Phase 1: Task Force Formation (Months 1-6)</div>
@@ -1318,16 +1522,11 @@
       </p>
     </div>
 
-    <h2>6.2 Risk Management and Mitigation Strategies</h2>
+    <h2 id="risk-management">6.2 Risk Management and Mitigation Strategies</h2>
 
     <h3>Technical Risks</h3>
     <ul>
-      <li>
-        <strong>Technology Evolution:</strong> Rapid AI advancement could make
-        initial models obsolete <br />
-        <em>Mitigation:</em> Continuous R&D investment, partnerships with
-        leading research institutions
-      </li>
+      <li></li>
       <li>
         <strong>Talent Competition:</strong> Private companies offering higher
         compensation <br />
@@ -1387,9 +1586,9 @@
 
     <div class="page-break"></div>
 
-    <h1>7. Conclusion and Next Steps</h1>
+    <h1 id="conclusion">7. Conclusion and Next Steps</h1>
 
-    <h2>7.1 Strategic Imperative</h2>
+    <h2 id="strategic-imperative">7.1 Strategic Imperative</h2>
 
     <p>
       The Nordic AI Initiative is not merely a promising economic prospect—it is
@@ -1413,7 +1612,7 @@
       </p>
     </div>
 
-    <h2>7.2 Unique Nordic Advantages</h2>
+    <h2 id="unique-advantages">7.2 Unique Nordic Advantages</h2>
 
     <p>
       The Nordic region is uniquely positioned to lead this initiative, thanks
@@ -1432,7 +1631,7 @@
       champion democratic values in global AI governance.
     </p>
 
-    <h2>7.3 Transformative Potential</h2>
+    <h2 id="transformative-potential">7.3 Transformative Potential</h2>
 
     <p>
       The success of this initiative would ripple far beyond the Nordic region,
@@ -1468,7 +1667,7 @@
       others can emulate.
     </p>
 
-    <h2>7.4 Call to Action</h2>
+    <h2 id="call-to-action">7.4 Call to Action</h2>
 
     <p>
       To seize this opportunity and mitigate the growing risks, immediate steps
